@@ -20,4 +20,15 @@ for i in range(int(hvor_mange)):
     favoritt_farge = input("Hva er din favorittfarge? ")
     print("Ah, " + favoritt_farge + " er en fin farge!")
 
-    print("ha en fin dag, " + navn + "!")
+    def sports_interesse():
+        sport = input("Spiller du sport? (ja/nei) ")
+        if sport.lower() == "ja":        
+            hvilken_sport = input("Hvilken sport spiller du? ")
+            print("Kult! " + hvilken_sport + " er en morsom sport!")
+        elif sport.lower() == "nei":
+            print("Ok men jeg anbefaler å prøve for eksempel basketball, det synes jeg er gøy!")
+    sports_interesse()
+
+if int(hvor_mange) < 2:
+    print("Ha en fin dag!")
+else: print("Ha en fin dag alle sammen!")
